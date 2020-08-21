@@ -16,17 +16,18 @@ int main (){
     }
     ll t;
     cin>>t;
+    set <ll> s;
     while(t--){
         ll n;
         cin>>n;
         ll count=0;
-        for (ll i = 0; i < 701; ++i) {
-            if(n-i<0){
+        ll x=n>700? n-700:n;
+        for (ll i = 0; i < x; ++i) {
+            if(i<0){
                 break;
             }
-            if(binary_search(a.begin(),a.end(),n-i))
-            count++;
+            s.insert(sqrt(i));
         }
-       cout<<count<<endl;
+       cout<<s.size()<<endl;
     }
 }
