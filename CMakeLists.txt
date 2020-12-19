@@ -3,4 +3,4 @@ project(cp)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(cp leetcode/add-2-nos-2.cpp)
+add_executable(cp  hackerearth/superdaily.cpp)
